@@ -1,0 +1,332 @@
+.header__main{
+    align-items: center;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.header__menu--list{
+    display: flex;
+}
+
+.header__menu--item{
+    list-style: none;
+}
+
+.header__menu--link{
+    text-decoration: none;
+    color: #808080;
+    margin-right: 1.25rem;
+}
+
+.header__menu--link:hover{
+    text-decoration: underline;
+}
+
+.link-active{
+    color: #333333;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner__img{
+    width: 100%;
+    height: calc(100vh - 72px);
+}
+
+.banner__title{
+    position: absolute;
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    font-size: 5.0625rem;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.sobre{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.sobre__title{
+    font-family: Pacifico, cursive;
+    color: #DA2B1F;
+    font-size: 3.1875rem;
+}
+
+.sobre__texto{
+    color: #8c8888;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.recetas{
+    background-color: #DAB997;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 4rem;
+}
+
+.receta{
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(25% - 5rem);
+}
+
+.receta__imagen{
+    height: 200px;
+}
+
+.receta__titulo{
+    font-size: 1.4375rem;
+}
+
+.receta__descripcion{
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.receta__contenido{
+    padding: 1rem;
+}
+
+.receta__boton{
+    background-color: #DA2B1F;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 1rem;
+    transition: all .1s ease-in-out;
+}
+
+.receta__boton:hover{
+    cursor: pointer;
+    background-color: #9F1010;
+}
+
+.quienes{
+    padding: 5rem;
+    text-align: center;
+}
+
+.quienes__titulo{
+    color: #DA2B1F;
+    font-family: Pacifico, cursive;
+    font-size: 3.1875rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+}
+
+.quienes__descripcion{
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.persona{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.persona__imagen{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.persona__imagen--roberta{
+    background-image: url(/roberta.jpg);
+}
+
+.persona__imagen--marcela{
+    background-image: url(/marcela.jpg);
+}
+
+.persona__imagen--andreia{
+    background-image: url(/andrea.jpg);
+}
+
+.persona__nombre{
+    color: #DA2B1F;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.persona__funcion{
+    color: #595959;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}
+
+.rodapie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.rodapie__titulo{
+    display: flex;
+    color: #8c8888;
+    font-weight: 400;
+    font-size: 1.25rem;
+    align-items: center;
+    padding: 1.625rem;
+}
+
+.rodapie__descripcion{
+    display: flex;
+    font-size: 2rem;
+    margin-left: 5rem;
+    color: #8c8888;
+}
+
+.rodapie__lista{
+    display: flex;
+    list-style: none;
+}
+
+.rodapie__icon{
+    margin-right: 1.25rem;
+}
+
+@media screen and (min-width:0)
+{
+    .header__main{
+        padding: 0 1rem;
+        justify-content: center;
+    }
+
+    .header__main--img{
+        display: none;
+    }
+
+    .banner__title{
+        font-size: 3rem;
+    }
+
+    .banner__img{
+        height: calc(100vh - 51px);
+    }
+
+    .sobre{
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre__title{
+        font-size: 2rem;
+    }
+
+    .sobre__texto{
+        font-size: 1.3rem;
+    }
+
+    .recetas{
+        padding: 5rem 0 0 1rem;
+    }
+
+    .receta{
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .personas{
+        flex-direction: column;
+    }
+
+    .persona{
+       margin-bottom: 2rem; 
+    }
+}
+
+@media screen and (min-width:768px)
+{
+    .header__main{
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+
+    .header__main--img{
+        display: block;
+    }
+
+    .banner__title{
+        font-size: 5.0625rem;
+    }
+
+    .banner__img{
+        height: calc(100vh - 72px);
+    }
+
+    .sobre{
+        padding: 2.5rem;
+    }
+
+    .sobre__title{
+        font-size: 3.1875rem;
+    }
+
+    .sobre__texto{
+        font-size: 1.75rem;
+    }
+
+    .recetas{
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .receta{
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+
+    .personas{
+        flex-direction: column
+    }
+
+    .persona{
+        margin-bottom: 0; 
+    }
+
+}
+
+@media screen and (min-width:992px){
+    .recetas{
+        padding: 5rem 0 0 5rem;
+    }
+
+    .receta{
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+
+    .personas{
+        flex-direction: row;
+    }
+}
+
