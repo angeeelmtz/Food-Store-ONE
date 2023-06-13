@@ -157,18 +157,6 @@
     background-size: cover;
 }
 
-.persona__imagen--roberta{
-    background-image: url(/roberta.jpg);
-}
-
-.persona__imagen--marcela{
-    background-image: url(/marcela.jpg);
-}
-
-.persona__imagen--andreia{
-    background-image: url(/andrea.jpg);
-}
-
 .persona__nombre{
     color: #DA2B1F;
     font-family: Pacifico, cursive;
